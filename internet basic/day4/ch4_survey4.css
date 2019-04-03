@@ -1,0 +1,22 @@
+h1 {
+	color: brown;
+	text-align: center;
+}
+body {
+	background-color: aliceblue;
+}
+form{
+  margin: 0px 10px 0px 10px;
+  border:1px;
+  background-color: pink;
+  font: bold normal normal 1em "gothic";
+  color: blue;
+}
+label,p {
+	font: normal normal normal 1em "휴먼편지체";
+  color: black;
+}
+footer {
+	background-color: orange;
+	border-radius: 20px;
+}

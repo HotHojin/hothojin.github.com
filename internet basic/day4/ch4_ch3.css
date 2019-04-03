@@ -1,0 +1,32 @@
+
+h1 {
+	color: brown;
+	text-align: center;
+}
+
+header {
+	border-bottom: 1px solid black;
+}
+
+ul {
+	border: 1px solid black;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	font: normal normal normal 1em "휴먼편지체";
+	text-indent: 1em;
+}
+
+h2 {
+	color: blue;
+	text-shadow: 3px 3px 3px pink;
+}
+
+footer {
+	background-color: orange;
+	border-radius: 20px;
+}
