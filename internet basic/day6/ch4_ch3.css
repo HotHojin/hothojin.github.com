@@ -1,0 +1,62 @@
+* {
+	overflow: scroll;
+}
+html, body {
+		padding: 0px;
+		margin: 0px;
+		height: 100%;
+}
+
+h1 {
+	color: brown;
+	text-align: center;
+}
+
+header {
+	border-bottom: 1px solid black;
+	height: 15%;
+	overflow: hidden;
+	background-color: yellow;
+}
+
+nav {
+	width: 20%;
+	height: 75%;
+	overflow: hidden;
+	background-color: orange;
+	float: left;
+}
+
+section {
+	width: 80%;
+	height: 75%;
+	overflow: hidden;
+	background-color: skyblue;
+	float: left;
+}
+
+ul {
+	border: 1px solid black;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	font: normal normal normal 1em "휴먼편지체";
+	text-indent: 1em;
+}
+
+h2 {
+	color: blue;
+	text-shadow: 3px 3px 3px pink;
+}
+
+footer {
+	font: normal normal normal 1em "휴먼편지체";
+	height: 10%;
+	overflow: hidden;
+	background-color: plum;
+	clear: left;
+}

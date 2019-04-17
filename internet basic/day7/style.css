@@ -1,0 +1,19 @@
+header{
+  height: 15%;
+  background-color: aliceblue;
+  text-align: center;
+}
+nav {
+	width: 20%;
+	height: 80%;
+	background-color: pink;
+	float: left;
+}
+section {
+  background-color: yellow;
+  height: 80%;
+}
+footer {
+  background-color: aliceblue;
+  height: 5%;
+}
