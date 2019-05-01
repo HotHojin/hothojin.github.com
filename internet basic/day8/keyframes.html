@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="utf-8">
+    <title>animation</title>
+    <style>
+      @keyframes textColor {
+        0% { color: blue; }
+        30% { color: green; }
+        100% { color: red; }
+      }
+      span {
+        font-size: 32px;
+        animation-name: textColor;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <p><span>span</span>5초간격으로 blue green red</p>
+  </body>
+</html>

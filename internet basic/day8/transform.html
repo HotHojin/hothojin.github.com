@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>transform</title>
+    <style media="screen">
+      div {
+        display: inline-block;
+        padding: 5px;
+        color: white;
+        background: olivedrab;
+      }
+      #rotate { transform : rotate(20deg); }
+      #skew { transform : skew(0deg,-20deg); }
+      #translate { transform : translateY(100px); }
+      #scale { transform : scale(3,1); }
+      #rotate:hover { transform : rotate(80deg);}
+      #skew:hover { transform : skew(0deg, -60deg); }
+      #translate:hover { transform : translate(50px, 100px); }
+      #scale:hover { transform : scale(4,2); }
+    </style>
+  </head>
+  <body>
+    <h3>various transform</h3>
+    <hr>
+    <div id="rotate">rotate</div>
+    <div id="skew">skew</div>
+    <div id="translate">translate</div>
+    <div id="scale">scale</div>
+  </body>
+</html>
