@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      function setImg() {
+        a= document.getElementsByTagName("input");
+        for (var i=0; i<3; i++)
+            if (a[i].checked==true)
+              document.getElementsByTagName("img")[0].src = "../img/"+a[i].value+".png"
+        }
+    </script>
+  </head>
+  <body>
+    <input type="radio" name="chk_info" value="galaxys7" onclick="setImg()">galaxys7
+    <input type="radio" name="chk_info" value="iphone6" onclick="setImg()">iphone6
+    <input type="radio" name="chk_info" value="nokia" onclick="setImg()">nokia
+    <hr>
+    <img src="../img/hos.png" width="30%" alt="">
+  </body>
+</html>

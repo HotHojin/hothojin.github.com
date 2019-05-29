@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>이벤트 객체의 target</title>
+    <script>
+        // mouseover 이벤트 리스너 함수 작성
+        function mouse_over(obj) {
+            obj.style.color = "red";
+            obj.style.textDecoration = "underline";
+        }
+
+        function mouse_out(obj) {
+            obj.style.color = "black";
+            obj.style.textDecoration = "none";
+        }
+    </script>
+</head>
+
+<body>
+    <h3>span 태그에만 onmouseover/onmouseout</h3>
+    <hr>
+    <!--  span태그에 mouseover/mouseout 이벤트리스너 등록-->
+    <p>span 태그에 대해서만
+        <span onmouseover="mouse_over(this)" onmouseout="mouse_out(this)">마우스</span>가 올라올 때 밑줄이 그어지고 <span onmouseover="mouse_over(this)" onmouseout="mouse_out(this)">마우스</span>가 내려갈 때 밑줄이 사라지도록
+        <span onmouseover="mouse_over(this)" onmouseout="mouse_out(this)">자바스크립트 코드</span >를 작성한다.
+    </p>
+</body>
+</html>
