@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html><head><title>배열생성</title></head>
+<body>
+<h3>Array 객체로 배열 만들기</h3>
+<hr>
+<script>
+  var degrees = [21.4, 19.2, 16.1, 17.5, 15.4, 15.1];
+  var sum = 0;
+  for(i=0; i<degrees.length; i++)
+  sum += degrees[i];
+  document.write("평균 온도는 " +
+  sum/degrees.length + "<br>");
+  degrees.sort();
+  for(i=0; i<degrees.length; i++)
+  document.write(""+(i+1)+"번째 원소는: "+degrees[i]+"<br>");
+  </script>
+  </body>
+  </html>

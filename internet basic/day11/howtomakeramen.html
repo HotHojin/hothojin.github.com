@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head><title>라면을 끓이는 순서</title></head>
+<body>
+      <h3> 라면을 끓이는 순서 </h3>
+      <hr>
+      <ol type ="A" onclick ='this.style.background="yellow"'>
+           <li> 물을 끓인다. </li>
+           <li><span>라면</span>과 스프를 넣는다.</li>
+          <li> 5분 후 <strong>맛있게</strong>먹는다. </li>
+     </ol>
+<script>
+  var x = document.getElementsByTagName("li")
+  for (let i = 0; i < x.length; i++) {
+    x[i].style.color = "green";
+  }
+</script>
+</body>
+</html>

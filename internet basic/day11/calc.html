@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>계산기</title>
+      <script>
+         function calculate(obj) {
+             var parentObj = obj.parentElement; //부모 DOM객체 얻어오기
+             var str = parentObj.innerText; //부모객체의 content얻어오기
+             var str1 = str.split("="); // “=”를 기준으로 문장 분리하기
+             obj.innerHTML = eval(str1[0]); // “=”를 기준으로 분리된 앞의 부분 계산하기
+         // 예) 2+4 = 답에서 2+4부분만 eval함수의 매개변수로 입력
+         }
+      </script>
+   </head>
+   <body>
+      <h3>계산해봅시다</h3>
+      <hr>
+      <p>2 + 4 = <span onclick="calculate(this)">답</span>
+      <p>4 * 20 + 64 = <span onclick="calculate(this)">답</span>
+      <p>20/5-8*2 = <span onclick="calculate(this)">답</span>
+   </body>
+</html>

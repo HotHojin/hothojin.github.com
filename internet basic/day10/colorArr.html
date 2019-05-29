@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>17개의 CSS2 색이름과 색</title>
+<style>
+div {
+	display : inline-block;
+	width : 60px;
+	padding : 10px;
+}
+</style>
+</head>
+<body>
+<h3>17개의 CSS2 색이름과 색</h3>
+<hr>
+<script>
+var colorArr = [ "maroon", "red", "orange", "yellow", "olive",
+              		"purple", "fuchsia", "white", "lime", "green",
+              		"navy", "blue", "aqua", "teal", "black", "silver", "gray"];
+
+for(i=0; i<colorArr.length; i++) {
+    // div의 배경색을 colorArr의 배열에 저장된 색으로 지정
+	var str = "<div style='background-color:";
+	str += (colorArr[i]);
+	str += "'>" + (colorArr[i])+ "</div>";
+
+	document.write(str);
+}
+</script>
+</body>
+</html>

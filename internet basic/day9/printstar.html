@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>별 문자 출력하기</title>
+    <script>
+        function printStar(n) {
+            var m = parseInt(n);
+            if (m <= 0) {
+                alert('wrong number!');
+                return 0;
+            } else {
+                for (var i = 0; i <= m; i++) {
+                    for (var j = 0; j < i; j++) {
+                        document.write("*");
+                    }
+                    document.write("<br>");
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h3>별 문자 출력하기</h3>
+    <hr>
+    <script>
+        var ins = prompt('정수를 입력하세요', '');
+        printStar(ins);
+    </script>
+</body>
+
+</html>
