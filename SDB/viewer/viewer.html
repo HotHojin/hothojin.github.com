@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DB VIEWER</title>
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <style>
+            * {
+            font-family: "Ubuntu";
+            }
+            h1 {
+            text-align: center;
+            float: left;
+            margin: 0 20 0 20;
+            width: 100%;
+            height: 10%;
+            }
+            nav {
+            float: left;
+            width: 20%;
+            height: 100%;
+            }
+            div {
+              display: block;
+            }
+            iframe {
+            float: left;
+            width: 79%;
+            height: 700px;
+            }
+            details,a {
+              margin-left: 20px;
+              text-decoration: none;
+              color: black;
+              font-size: 20px;
+            }
+			footer {
+				display: table;
+				text-align: center;
+				margin-left: auto;
+				margin-right: auto;
+			}
+        </style>
+        <script type="text/javascript">
+          function ifrclk(obj) {
+            var ifr = document.getElementsByTagName('iframe')[0];
+            var objn = obj.parentNode;
+            var str = '/'+obj.innerText+'.html'
+            while (objn.tagName=='DETAILS') {
+              str = '/'+objn.getElementsByTagName('summary')[0].innerText+str;
+              objn = objn.parentNode;
+            }
+            ifr.src='./datas'+str;
+            console.log(str);
+          }
+        </script>
+    </head>
+    <body>
+        <header onclick="location.href = '../index.html';">
+            <h1>SSU LLE CS DB</h1>
+        </header>
+        <nav>
+            <details open>
+                <summary>필독</summary>
+                <a onclick="ifrclk(this);">사이트 사용법</a><br>
+                <a onclick="ifrclk(this);">주의사항</a><br>
+                <a onclick="ifrclk(this);">공지사항</a><br>
+            </details>
+            <details>
+                <summary>인터넷활용1</summary>
+                <a onclick="ifrclk(this);">1차시</a><br>
+                <a onclick="ifrclk(this);">2차시</a><br>
+                <a onclick="ifrclk(this);">3차시</a><br>
+            </details>
+            <details>
+                <summary>PC활용1</summary>
+                <details>
+                    <summary>엑셀</summary>
+                    <a onclick="ifrclk(this);">1차시</a><br>
+                    <a onclick="ifrclk(this);">2차시</a><br>
+                    <a onclick="ifrclk(this);">3차시</a><br>
+                </details>
+                <details>
+                    <summary>파워포인트</summary>
+                    <a onclick="ifrclk(this);">1차시</a><br>
+                    <a onclick="ifrclk(this);">2차시</a><br>
+                </details>
+            </details>
+        </nav>
+        <section>
+            <iframe></iframe>
+        </section>
+		<footer>
+			<br>click logo to go home. (C) hojin ryu a.k.a HotHojin
+		</footer>
+    </body>
+</html>
